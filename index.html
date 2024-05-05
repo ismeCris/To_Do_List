@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>To Do List</title>
 </head>
 <body>
@@ -13,28 +14,28 @@
 
         <form action="" class="to_do_form">
             <input type="text" name="description" placeholder="white your task here">
-            <button type="submit">
+            <button type="submit"class="form-button ">
                 <i class="fa-solid fa-plus"></i>
             </button>
         </form>
 
         <div id="tasks">
-            <div class="tesk">
+            <div class="task">
                 <input type="checkbox" name=" progress" class="progress">
-                <p class="task-description">tema de casa</p>
+                <p class="task-description"> tema de casa</p>
                     <div class="task-actions">
                         <a href="#" class="action-button edit-button">
                             <i class="fa-solid fa-pen-to-square"></i>
                         </a>
-                        <a href="#" class="action-button delete-button">
-                            <i class="fa-solid fa-trash-can"></i>
+                        <a class="action-button delete-button">
+                            <i class="fa-regular fa-trash-can"></i>
                         </a>
                     </div>
 
-                    <form action="" class="to-fo-from edit-task">
+                    <form action="" class="to_do_form edit-task hidden">
                         <input type="text" name="description" placeholder="edit your task here">
                         <button type="submit" class="form-button confirm-button">
-                            <i class="fa-solid fa-check"></i>
+                            <i class="fa-regular fa-check"></i>
                         </button>
                     </form>
             </div>
@@ -43,4 +44,4 @@
 </body>
 <script src="script.js"></script>
 </html>
-<!--06:43-->
+<!--21:57-->

@@ -21,5 +21,102 @@ body{
     display: flex;
     flex-direction: column;
     gap: 25px;
-    background-color: #10101d;
+    background-color: #6867AC;
+    padding: 18px;
+    border-radius: 8px;
+    width: 430px;
+}
+
+#to_do h1{
+
+    color: #e5f9ff;
+    font-size: 28px;
+    text-transform:uppercase ;
+}
+
+.to_do_form{
+    display: flex;
+    width: 100%;
+}
+
+.to_do_form input{
+    background-color: transparent;
+    border: none;
+    color: #e5f9ff;
+    font-size: 16px;
+    width: 100%;
+    padding: 4px;
+    border-bottom: 2px solid #ee9ca7;
+}
+
+.to_do_formm input:focus-visible{
+    outline: none;
+}
+
+.to_do_form .form-button{
+    border: none;
+    min-width: 40px;
+    min-height: 40px;
+    background-color:  #ee9ca7;
+    border-radius: 100%;
+    font-size: 20px;
+    transition: scale 0.50 ease;
+}
+
+.to_do_form .form-button:hover{
+    cursor: pointer;
+    scale: 1.05;
+}
+
+#tasks{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 400px;
+    overflow: auto;
+}
+
+.task{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #262626;
+    background-color: #4e4e86;
+    border-radius: 4px;
+}
+.task progress{
+    margin-right: 10px;
+}
+
+.task .task-description{
+    font-size: 16px;
+    color: #fff;
+    padding: 4px 0px;
+    width: 100%;
+}
+
+.task .task-actions{
+    display: flex;
+    gap: 10px;
+
+}
+
+.action-button{
+    font-size: 16px;
+}
+.action-button.edit-button{
+    color: #6c9bbc;
+}
+.action-button.delete-button{
+    color: #ee9ca7;
+}
+
+.hidden{
+    display: none !important;
+}
+
+@media screen and(max-width: 600px) {
+    #to_do{
+        width: 300px;
+    }
 }
